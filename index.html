@@ -12,7 +12,12 @@
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
+  <body
+        <h1>Instructions:</h1>
+      The object of the game is to destroy your opponent's castle. Do this by spending gold on troops and mana on spells.<br>
+      Workers produce gold. Each worker costs 100 more gold then the worker before it, to a maximum of 6 workers.<br>
+      Capture one of the floating swords by sending a troop to walk through it, and mana/gold production will increase.<br>
+      Hit "Play" to play vs. someone online, or "Play AI" to instantly start playing against an AI.<br>
     <div class="webgl-content">
       <div id="gameContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
